@@ -1,6 +1,6 @@
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: {
@@ -8,7 +8,7 @@ module.exports = {
         sobre: './src/App/sobre.js'
     },
     output: {
-        filename: "[name].bundle.js",
+        filename: "js/[name].bundle.js",
         path: path.resolve(__dirname, 'dist')
     },
     module: {
@@ -62,7 +62,7 @@ module.exports = {
             chunks : ['sobre']
         }),
         new MiniCssExtractPlugin({
-            filename: 'style.css'
+            filename: "css/[name].css"
         })
     ]
 }

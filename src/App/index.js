@@ -1,5 +1,7 @@
 import './sass/style.sass';
+import './sass/index.sass';
 import img from './img/foto.jpg';
+import img2 from './img/foto-2.jpg';
 
 const textComponent = () => {
     let elh1 = document.createElement('h1');
